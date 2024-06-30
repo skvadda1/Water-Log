@@ -1,0 +1,79 @@
+body {
+  text-align: center;
+}
+
+h2 {
+  font-family: cursive;
+  font-size: %;
+}
+
+.rainbow-button {
+  border-radius: 50px;
+  font-size: 200%;
+  width: 100%;
+  height: 200%;
+  background-image: linear-gradient(to right, #FF69B4, #FFC107, #8BC34A, #4CAF50, #2196F3, #9C27B0);
+  background-size: 200%;
+  background-position: 0% 0%;
+  transition: background-position 0.5s ease-out;
+}
+
+.rainbow-button:hover {
+  background-position: 100% 0%;
+}
+
+.rainbow-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 70px;
+  cursor: pointer;
+}
+
+.rainbow-button:hover {
+  background-color: #3e8e41;
+}
+
+.rainbow-button:active {
+  background-color: #2e6c3f;
+}
+
+h3 {
+  border-width: 200%;
+  border-color: lightskyblue;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #FF69B4, #FFC107, #8BC34A, #4CAF50, #2196F3, #9C27B0);
+  font-size: 200%;
+}
+
+#confetti-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+  /* Set a background color for the container */
+  display: none;
+  /* Hide the container initially */
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #ff69b4;
+  border-radius: 50%;
+  animation: confetti-fall 1s infinite;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}
